@@ -25,7 +25,7 @@ const Product = () => {
         <input type="number" value={price} onChange={priceChangeHandler} />
         <button>Add</button>
       </form>
-      <CardList products={newProduct}/>
+      <CardList products={newProduct} dispatch={dispatch}/>
     </div>
   );
 };
