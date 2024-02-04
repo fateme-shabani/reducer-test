@@ -16,8 +16,12 @@ export const reducer = (currentProduct, action) => {
           return { ...item, isActive: !item.isActive };
         }
         return item;
-      })
-      default :
-      currentProduct
+      });
+    case "delete":
+      return currentProduct.filter((item) => {
+        item.id !== action.payload.id;
+      });
+    default:
+      currentProduct;
   }
 };
