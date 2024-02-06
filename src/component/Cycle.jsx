@@ -1,4 +1,4 @@
-// import React, { useEffect } from "react";
+// import React, { useEffect , useState} from "react";
 
 // const Cycle = () => {
 //   const [item, setitem] = useState([]);
@@ -8,10 +8,13 @@
 //       { name: "test1", price: 10 },
 //       { name: "test2", price: 20 },
 //     ]);
-//   }, [item]);
+//   }, []);
 
 //   return <div>
-//     <h2>{item}</h2>
+//     {/* <h2>{item.name}</h2> */}
+//     {item.map((e , index)=>{
+//         return <h2 key={index}>{e.name}</h2>
+//     })}
 //   </div>;
 // };
 

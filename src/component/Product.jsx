@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useCallback, useEffect, useReducer, useState } from "react";
 import { reducer } from "../myReducers/reducer1";
 import CardList from "./CardList";
 
@@ -25,7 +25,7 @@ const Product = () => {
         <input type="number" value={price} onChange={priceChangeHandler} />
         <button>Add</button>
       </form>
-      <CardList products={newProduct} dispatch={dispatch}/>
+      <CardList products={newProduct} dispatch={dispatch} />
     </div>
   );
 };

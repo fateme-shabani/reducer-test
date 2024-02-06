@@ -4,7 +4,7 @@ export const reducer = (currentProduct, action) => {
       return [
         ...currentProduct,
         {
-          id: new Date(),
+          id: Date.now(),
           name: action.payload.name,
           price: action.payload.p,
           isActive: false,
@@ -19,7 +19,7 @@ export const reducer = (currentProduct, action) => {
       });
     case "delete":
       return currentProduct.filter((item) => {
-        item.id !== action.payload.id;
+        return item.id !== action.payload.id
       });
     default:
       currentProduct;

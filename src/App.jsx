@@ -3,7 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Product from "./component/Product";
-// import Cycle from "./component/cycle";
+import Cycle from "./component/cycle";
+import CombineArray from "./component/CombineArray";
 
 function App() {
   const reducer = (currentState, action) => {
